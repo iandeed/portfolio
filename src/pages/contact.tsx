@@ -6,7 +6,7 @@ export default function ContactPage(): ReactNode {
   return (
     <PortfolioPage
       title="Contact"
-      description="Get in touch with Ian Deed via email, LinkedIn or by visiting the contact details below."
+      description="Get in touch with me via email, LinkedIn or by visiting the contact details below."
       intro="I’m based in Edinburgh and currently interested in technical writing roles that value clear communication, strong collaboration and practical product understanding."
     >
       <section className={styles.contentSection}>

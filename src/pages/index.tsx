@@ -8,18 +8,14 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 const interestPoints = [
-  'Software engineering and developer-facing documentation',
-  'Data products, geospatial platforms and technical workflows',
-  'Docs-as-code, accessibility and information architecture',
-  'Customer-facing content for technical and non-technical audiences',
+  'Docs-as-code — ensuring content always remains accurate, reliable and up to date.',
+  'Information architecture — making it easy for users to find what they need.',
+  'Web accessibility — ensuring all users have access to crucial documentation.',
+  'Web analytics — identifying content gaps, and finding areas for architectural improvement using metrics.',
+  'SEO and AEO — enabling customers to connect to relevant and informative content.',
 ];
 
 const featureCards = [
-  {
-    title: 'About me',
-    description: 'Learn more about my background, experience and approach to technical writing.',
-    to: '/about',
-  },
   {
     title: 'CV',
     description: 'View my professional experience, education and skills.',
@@ -38,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="Ian Deed is a technical writer experienced in software engineering, data products and customer-facing documentation."
+      description="Ian Deed is a technical writer experienced in software engineering, technical content creation, and customer-facing documentation."
     >
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
@@ -48,12 +44,9 @@ export default function Home(): ReactNode {
           </Heading>
           <p className={styles.heroSubtitle}>
             I turn information about complex software and data products into clear,
-            usable documentation and content to enable customers to do more.
+            usable documentation to enable customers to do more.
           </p>
           <div className={styles.buttons}>
-            <Link className="button button--secondary button--lg" to="/about">
-              About me
-            </Link>
             <Link className={clsx('button button--secondary button--lg', styles.secondaryButton)} to="/cv">
               View CV
             </Link>
@@ -67,14 +60,12 @@ export default function Home(): ReactNode {
             <div className="row">
               <div className="col col--7">
                 <h2 className={styles.sectionTitle}>Who I am</h2>
-                <p>
-                  I’m a technical writer with a rich background in software engineering
-                  and more than 15 years of experience working with technology, data and
-                  technical communications.
+                <p>I’m a technical writer with a software engineering background and over 15 years’ experience in software, data, and technical communications. 
+                   I turn complex systems into clear and usable documentation that helps customers do more.
                 </p>
                 <p>
-                  I create customer-focused documentation that makes complex topics easier
-                  to understand. Whether this lives in technical specifications, user guides, or online blogs, I focus on clarity, usability and accessibility to help customers get the most out of the products they use.
+                  By partnering with product, engineering, and support teams I aim to take ownership of the documentation process from requirements gathering through to delivery. 
+                  My focus is on creating a clear information architecture with accessible and user-focused plain English content that meets the needs of both technical and non-technical audiences.
                 </p>
               </div>
               <div className="col col--5">
