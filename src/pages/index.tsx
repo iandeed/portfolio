@@ -60,7 +60,7 @@ export default function Home(): ReactNode {
             <div className="row">
               <div className="col col--7">
                 <h2 className={styles.sectionTitle}>Who I am</h2>
-                <p>I’m a technical writer with a software engineering background and over 15 years’ experience in software, data, and technical communications. 
+                <p>I’m a technical writer with a software development background and over 15 years’ experience in software engineering, data documentation, and technical communications.
                    I turn complex systems into clear and usable documentation that helps customers do more.
                 </p>
                 <p>
