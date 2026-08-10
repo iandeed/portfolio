@@ -38,7 +38,8 @@ const experience = [
     dates: 'September 2016 – October 2018',
     blurb: 'I worked as a software engineer and took on the role of technical writer within the team to create documentation that would support the adoption and use of the product.',
     points: [
-      'Built internal diagnostic and mobile application tools for monitoring, diagnostics and repair workflows.',
+      'Built a mobile application to enable IP CCTV engineers to monitor vital equipment, perform diagnostics and repair devices in the field.',
+      'Replaced bulky and time consuming diagnostic equipment with an easy-to-use mobile application that performed well in the field against the most common use cases.',
       'Overhauled existing documentation to reflect changes in technology and implementation.',
       'Gained early experience in technical communication while working in a software engineering environment.',
     ],
@@ -48,10 +49,12 @@ const experience = [
     location: 'Dunfermline, Fife',
     role: 'Software Engineer',
     dates: 'July 2015 – August 2016',
-    blurb: 'I worked as a software engineer, gaining experience in developing and maintaining applications for embedded systems.',
+    blurb: 'I worked as a software engineer in a small team, bringing a skillset in mobile application development to an organistion that was exploring the technology for the first time. During my time in this role I was able to take on project management responsibilities as part of a small team working on mobile application development within the organisation.',
     points: [
-      'Brought mobile application development experience to an organisation focused on safety-critical embedded systems.',
-      'Took on project management and technical leadership responsibilities as the only full-time engineer on mobile development work.',
+      'Brought mobile application development experience to an organisation that was just beginning to explore the technology at the time.',
+      'Took on project management and responsibilities as part of a small team of engineers working on mobile application development.',
+      'Built cross-platform mobile applications for iOS and Android using Java and C#.',
+      'Created a bespoke mobile application distribution model to allow for third-party deployment of a mobile applications to a small number of users without the need for public app store.',
     ],
   },
   {
@@ -59,10 +62,12 @@ const experience = [
     location: 'Edinburgh',
     role: 'Junior Test Engineer',
     dates: 'March 2013 – June 2015 (P/T & F/T)',
-    blurb: 'I worked as a junior test engineer, gaining experience in writing and executing tests for systems used in clinical trials.',
+    blurb: 'Alongside my university studies, I worked as a junior test engineer at a company that provided software to facilitate pharmaceutical clinical trials. This role provded me with valuable experience of real-world software projects and provided me with the opportunity to write tests to support systems at a scale I had not experienced at that time.',
     points: [
-      'Wrote manual and automated tests for systems used in clinical trials.',
-      'Developed practical experience working closely with clients to shape requirements and improve business practices.',
+      'Wrote systems tests to support continuous integration and ensure code-coverage to support double-blind clinical trials.',
+      'Wrote user test scripts to support acceptance testing of software applications.',
+      'Developed practical experience working closely with clients to shape requirements and deliver software that met their needs.',
+  
     ],
   },
 ];
@@ -108,11 +113,11 @@ export default function CVPage(): ReactNode {
                 </p>
           <h3 className={styles.sectionTitle}>Key strengths</h3>
             <ul className={styles.sectionList}>
-              <li>Technical fluency — I am comfortable working directly with an unfamiliar codebase, learning new technologies, and understanding complex systems to create new documentation.</li>
-              <li>Outcome driven — I prioritise measuring results through analytics and user insights to create proven documentation that works.</li>
-              <li>User focused — my goal is to keep the end user in mind when designing or updating documentation. In practice, this means creating content that is broadly accessible, well-written, and meets specific goals.</li>
-              <li>Docs-as-code — I am passionate about using softwaredevelopment processes and tools to enhance the creation, testing, and maintenance of documentation.</li>
-              <li>Collaborative — I work effectively with cross-functional teams to ensure documentation communicates the necessary technical detail while aligning with broader business objectives and user needs.</li>
+              <li><b>Technical fluency:</b> I am comfortable working directly with an unfamiliar codebase, learning new technologies, and understanding complex systems to create new documentation.</li>
+              <li><b>Outcome driven:</b> I prioritise measuring results through analytics and user insights to create proven documentation that works.</li>
+              <li><b>User focused:</b> my goal is to keep the end user in mind when designing or updating documentation. In practice, this means creating content that is broadly accessible, well-written, and meets specific goals.</li>
+              <li><b>Docs-as-code:</b> I am passionate about using softwaredevelopment processes and tools to enhance the creation, testing, and maintenance of documentation.</li>
+              <li><b>Collaborative:</b> I work effectively with cross-functional teams to ensure documentation communicates the necessary technical detail while aligning with broader business objectives and user needs.</li>
             </ul>
         </div>
       </section>
@@ -126,8 +131,9 @@ export default function CVPage(): ReactNode {
                 <h3>{item.company}</h3>
                 <p className={styles.cardMeta}>{item.role}</p>
                 <p className={styles.cardMeta}>{item.location}</p>
-                <p className={styles.cardMeta}>{item.dates}</p>
+               <b><p className={styles.cardMeta}>{item.dates}</p></b>
                 <p className={styles.cardBlurb}>{item.blurb}</p>
+                <h4>Notable work and achievements:</h4>
                 <ul className={styles.sectionList}>
                   {item.points.map((point) => (
                     <li key={point}>{point}</li>

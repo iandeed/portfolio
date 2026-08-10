@@ -72,9 +72,11 @@ export default function Home(): ReactNode {
                 <div className={styles.infoCard}>
                   <h3>Areas of interest</h3>
                   <ul className={styles.sectionList}>
-                    {interestPoints.map((point) => (
-                      <li key={point}>{point}</li>
-                    ))}
+                    <li><b>Docs-as-code</b> — ensuring content always remains accurate, reliable and up to date.'</li>
+                    <li><b>Information architecture</b> — making it easy for users to find what they need.'</li>
+                    <li><b>Web accessibility</b> — ensuring all users have access to crucial documentation.'</li>
+                    <li><b>Web analytics</b> — identifying content gaps, and finding areas for architectural improvement using metrics.'</li>
+                    <li><b>SEO and AEO</b> — enabling customers to connect to relevant and informative content.'</li>
                   </ul>
                 </div>
               </div>
