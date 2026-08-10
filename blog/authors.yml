@@ -10,6 +10,14 @@ yangshun:
     github: yangshun
     newsletter: https://www.greatfrontend.com
 
+ian-deed:
+  name: Ian Deed
+  title: Portfolio owner
+  url: https://github.com/iandeed
+  image_url: https://github.com/iandeed.png
+  socials:
+    github: iandeed
+
 slorber:
   name: Sébastien Lorber
   title: Docusaurus maintainer
