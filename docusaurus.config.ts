@@ -18,13 +18,14 @@ const config: Config = {
   url: 'https://iandeed.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/portfolio/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'iandeed', // Usually your GitHub org/user name.
   projectName: 'iandeed.github.io/portfolio', // Usually your repo name.
   trailingSlash: false,
+  deploymentBranch: 'main', // The branch the site is deployed to.
 
   onBrokenLinks: 'throw',
 
