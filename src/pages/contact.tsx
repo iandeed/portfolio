@@ -7,21 +7,17 @@ export default function ContactPage(): ReactNode {
     <PortfolioPage
       title="Contact"
       description="Get in touch with me via email, LinkedIn or by visiting the contact details below."
-      intro="I’m based in Edinburgh and currently interested in technical writing roles that value clear communication, strong collaboration and practical product understanding."
+      intro="I`m always happy to discuss interesting projects and ideas, share insights gained from past work or troubleshoot issues with existing documentation."
     >
       <section className={styles.contentSection}>
         <div className="row">
           <div className="col col--6">
             <div className={styles.infoCard}>
               <h2 className={styles.sectionTitle}>Get in touch</h2>
-              <p>
-                I’m always happy to discuss documentation projects, freelance work or
-                full-time opportunities.
-              </p>
               <ul className={styles.sectionList}>
-                <li>
-                  Email:{' '}
-                  <a href="mailto:i.deed9@gmail.com">i.deed9@gmail.com</a>
+                <li> Discord:                   <a href="https://www.discord.com" target="_blank" rel="noreferrer">
+                    _iand 
+                    </a>
                 </li>
                 <li>
                   LinkedIn:{' '}
@@ -36,8 +32,8 @@ export default function ContactPage(): ReactNode {
             <div className={styles.infoCard}>
               <h2 className={styles.sectionTitle}>What I’m looking for</h2>
               <p>
-                I’m particularly interested in opportunities where strong documentation
-                helps customers, engineers and product teams work more effectively.
+                I’m particularly interested in opportunities where software tooling, user insights
+                and customer insights are used to shape documentation and content strategy.
               </p>
               <p>
                 If you need help shaping documentation for a product, service or platform,

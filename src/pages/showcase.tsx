@@ -1,59 +1,23 @@
 import type {ReactNode} from 'react';
 import PortfolioPage from '@site/src/components/PortfolioPage';
 import styles from './index.module.css';
+import downloadsScreenshot from '../assets/downloadsScreenshot.png';
 
 const projects = [
   {
     title: 'Ordnance Survey product documentation',
     summary:
-      'Created documentation for geospatial data products and software solutions with a strong focus on customer clarity and accessibility.',
+      'Designed and implemented a web-based platform to replace existing PDF documentation for 45 Ordnance Survey downloadable data products. This project was essential to enabling the future growth of the organisation’s documentation by enabling detailed analytics and user insights to be collected on how users access, read, and interact with product documentation.',
     details: [
-      'Built content-led documentation for new products and services.',
-      'Improved release notes, product guides and customer communications.',
+      'Migrated product documentation from a legacy PDF-based documentation to a web-based platform.',
+      'Created a new information architecture to improve discoverability of product documentation.',
+      'Developed processes and tools to gather and act on user inights enabled by mving documentation to the new platform.',
+      'Improved the processses for creating release notes, product guides and customer communications.',
+      'Decreased time required to update existing documentation from days down to minutes through better tooling and processes.',
+      'Enabled broader ownership of product documentation by creating a platform that provided product teams with the ability to update and maintain documentation in collaboration with the technical writers.',
     ],
-    image: '/img/showcase-placeholder.svg',
-    imageAlt: 'Placeholder image for Ordnance Survey documentation project',
-    link: 'https://www.linkedin.com/in/ian-deed/',
-    linkLabel: 'View LinkedIn profile',
-  },
-  {
-    title: 'Veracity documentation',
-    summary:
-      'Shaped user guidance and testing documentation for software and technology projects by translating detailed technical topics into user-focused content.',
-    details: [
-      'Helped the team communicate complex tools in a concise, accurate way.',
-      'Balanced engineering detail with a usable end-user perspective.',
-    ],
-    image: '/img/showcase-placeholder.svg',
-    imageAlt: 'Placeholder image for Veracity documentation project',
-    link: 'https://www.linkedin.com/in/ian-deed/',
-    linkLabel: 'See more on LinkedIn',
-  },
-  {
-    title: 'Seven Technologies apps',
-    summary:
-      'Documented native mobile applications for local mapping and resource tracking across Android and iOS.',
-    details: [
-      'Wrote content for complex device communication and networking workflows.',
-      'Addressed the challenge of explaining two very different native experiences clearly.',
-    ],
-    image: '/img/showcase-placeholder.svg',
-    imageAlt: 'Placeholder image for Seven Technologies apps project',
-    link: 'https://www.linkedin.com/in/ian-deed/',
-    linkLabel: 'Explore my background',
-  },
-  {
-    title: 'Swarm Online manufacturing controls',
-    summary:
-      'Delivered documentation for a kiosk-based Android application used to control manufacturing equipment locally or centrally.',
-    details: [
-      'Supported implementation across a long development cycle with clear product guidance.',
-      'Turned a technical system into understandable user documentation.',
-    ],
-    image: '/img/showcase-placeholder.svg',
-    imageAlt: 'Placeholder image for Swarm Online manufacturing controls project',
-    link: 'https://www.linkedin.com/in/ian-deed/',
-    linkLabel: 'Connect with me',
+    link: 'https://docs.os.uk/os-downloads',
+    linkLabel: 'View Docs.os.uk/os-downloads',
   },
 ];
 
@@ -62,7 +26,7 @@ export default function ShowcasePage(): ReactNode {
     <PortfolioPage
       title="Showcase"
       description="Selected technical writing and documentation projects from Ian Deed's portfolio."
-      intro="A snapshot of recent projects and documentation work, with placeholder details for case studies that will be expanded over time."
+      intro="A snapshot of recent interesting projects and documentation work."
     >
       <section className={styles.contentSection}>
         <div className="row">
@@ -70,15 +34,10 @@ export default function ShowcasePage(): ReactNode {
             <div className="col col--6" key={project.title}>
               <div className={styles.projectCard}>
                 <div className={styles.projectScreenshot}>
-                  {project.image ? (
-                    <img
-                      src={project.image}
-                      alt={project.imageAlt}
-                      className={styles.projectScreenshotImage}
-                    />
-                  ) : (
-                    <span>Screenshot placeholder</span>
-                  )}
+                  <img
+                    src={downloadsScreenshot}
+                    alt={`Screenshot showing the Ordnance Survey downloads documentation site homepage with navigation menu, product list, and search bar; headline text reads OS Downloads; tone professional and informative.`}
+                  />
                 </div>
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
