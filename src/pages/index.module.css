@@ -124,6 +124,14 @@
   min-height: 180px;
   margin-bottom: 1rem;
   font-weight: 600;
+  overflow: hidden;
+}
+
+.projectScreenshotImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .linkButton {

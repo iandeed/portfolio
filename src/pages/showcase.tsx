@@ -11,6 +11,8 @@ const projects = [
       'Built content-led documentation for new products and services.',
       'Improved release notes, product guides and customer communications.',
     ],
+    image: '/img/showcase-placeholder.svg',
+    imageAlt: 'Placeholder image for Ordnance Survey documentation project',
     link: 'https://www.linkedin.com/in/ian-deed/',
     linkLabel: 'View LinkedIn profile',
   },
@@ -22,6 +24,8 @@ const projects = [
       'Helped the team communicate complex tools in a concise, accurate way.',
       'Balanced engineering detail with a usable end-user perspective.',
     ],
+    image: '/img/showcase-placeholder.svg',
+    imageAlt: 'Placeholder image for Veracity documentation project',
     link: 'https://www.linkedin.com/in/ian-deed/',
     linkLabel: 'See more on LinkedIn',
   },
@@ -33,6 +37,8 @@ const projects = [
       'Wrote content for complex device communication and networking workflows.',
       'Addressed the challenge of explaining two very different native experiences clearly.',
     ],
+    image: '/img/showcase-placeholder.svg',
+    imageAlt: 'Placeholder image for Seven Technologies apps project',
     link: 'https://www.linkedin.com/in/ian-deed/',
     linkLabel: 'Explore my background',
   },
@@ -44,6 +50,8 @@ const projects = [
       'Supported implementation across a long development cycle with clear product guidance.',
       'Turned a technical system into understandable user documentation.',
     ],
+    image: '/img/showcase-placeholder.svg',
+    imageAlt: 'Placeholder image for Swarm Online manufacturing controls project',
     link: 'https://www.linkedin.com/in/ian-deed/',
     linkLabel: 'Connect with me',
   },
@@ -62,7 +70,15 @@ export default function ShowcasePage(): ReactNode {
             <div className="col col--6" key={project.title}>
               <div className={styles.projectCard}>
                 <div className={styles.projectScreenshot}>
-                  <span>Screenshot placeholder</span>
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.imageAlt}
+                      className={styles.projectScreenshotImage}
+                    />
+                  ) : (
+                    <span>Screenshot placeholder</span>
+                  )}
                 </div>
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
